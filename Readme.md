@@ -3,7 +3,7 @@
 **[[Run Online]](https://codecentral.devexpress.com/e3583/)**
 <!-- run online end -->
 
-This example demonstrates how to use a text string from the external text box to filter a grid column on the client.
+This example demonstrates how to use a text string from an external text box to filter a grid column on the client.
 
 ![AutoFilterByColumn](AutoFilterByColumn.gif)
 
@@ -29,7 +29,7 @@ Follow the steps below:
     </asp:AccessDataSource>
     ```
 
-2. Add a text box and button. When a user enters a text string in the text box and clicks the button, the grid filters a particular column by the entered text. To enable this behavior, handle the button's client-side [Click](https://docs.devexpress.com/AspNet/js-ASPxClientButton.Click) event. In the handler, call the grid's [AutoFilterByColumn](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.AutoFilterByColumn(column-val)) method and use the text from the text box as a parameter.
+2. Add a text box and a button. When a user enters a text string in the text box and clicks the button, the grid filters a particular column by the entered string. To enable this behavior, handle the button's client-side [Click](https://docs.devexpress.com/AspNet/js-ASPxClientButton.Click) event. In the handler, call the grid's [AutoFilterByColumn](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.AutoFilterByColumn(column-val)) method and pass the edit value of the text box as a parameter.
 
     ```aspx
     <dx:ASPxTextBox ID="txtFilter" ClientInstanceName="txtClientFilter" runat="server" ... />
