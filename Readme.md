@@ -33,7 +33,8 @@ Follow the steps below:
 
     ```aspx
     <dx:ASPxTextBox ID="txtFilter" ClientInstanceName="txtClientFilter" runat="server" ... />
-    <dx:ASPxButton ID="btnFilter" ClientInstanceName="btnFilter" runat="server" Text="Filter by CategoryName" AutoPostBack="false" ...>
+    <dx:ASPxButton ID="btnFilter" ClientInstanceName="btnFilter" runat="server" Text="Filter by CategoryName"
+        AutoPostBack="false" ...>
         <ClientSideEvents Click="function(s, e) {
             grid.AutoFilterByColumn('CategoryName', txtClientFilter.GetValue());
         }" />
